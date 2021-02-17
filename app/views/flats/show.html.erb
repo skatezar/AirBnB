@@ -5,6 +5,13 @@
     <h4><%= @flat.name%> - <span style="color:red;">$<%= @flat.price_per_night %></span></h4>
     <h6><%= @flat.address %> - for <%= @flat.number_of_guests %> guests</h6>
     <p><%= @flat.description %></p>
+    <%= link_to "edit flat", edit_flat_path, class: "btn btn-info" %>
+    <br>
+     <%= link_to "Delete ",
+            flat_path(@flat),
+            class: 'btn btn-danger',
+            method: :delete,
+            data: { confirm: "Are you sure?" } %>
   </div>
 </div>
 
