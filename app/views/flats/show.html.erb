@@ -1,0 +1,11 @@
+
+<%= render "navbar" %>
+<div class="container">
+  <div class="card">
+    <h4><%= @flat.name%> - <span style="color:red;">$<%= @flat.price_per_night %></span></h4>
+    <h6><%= @flat.address %> - for <%= @flat.number_of_guests %> guests</h6>
+    <p><%= @flat.description %></p>
+  </div>
+</div>
+
+
