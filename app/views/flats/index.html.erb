@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="row">
+    <% @flats.each do |flat| %>
+    <div class="card card-extra m-3">
+      <h1 class="title-txt"><%= flat.name %></h1>
+      <p><%= flat.address %></p>
+      <p  class="price"><%= flat.price_per_night %></p>
+
+      <p><%= flat.number_of_guests %></p>
+      <a href="$">More Info</a>
+    </div>
+
+    <% end %>
+  </div>
+</div>
+
+
+
+<style type="text/css">
+  .price{
+  color:red;
+}
+
+</style>
